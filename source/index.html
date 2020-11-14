@@ -1,12 +1,143 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__moblogo">
+        <img class="page-header__moblogo-icon" src="img/logotype-mobile.svg" width="33" height="38" alt="Иконка с веселым котом">
+        <img class="page-header__moblogo-image" src="img/logotype-mobile.svg" width="101" height="18" alt="Питание для котов Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a>
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a>
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <h1 class="visually-hidden">Cat energy - здоровое питание вашего кота!</h1>
 
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <img class="promo__can-pic" src="img/can-mobile.png" width="280" height="270" alt="Банка корма Cat Energy">
+          <a class="button promo__button" href="#">Подобрать программу</a>
+        </div>
+      </section>
+
+      <section class="programs">
+        <div class="programs__wrapper">
+          <div class="slim">
+            <img class="slim__icon" src="img/slim-cat.png" width="50" height="53" alt="Просто сидящий кот">
+            <h3 class="slim__title">Похудение</h3>
+            <p class="slim__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="catalog__link slim__link" href="#">Каталог slim</a>
+          </div>
+
+          <div class="weight">
+            <img class="weight__icon" src="img/weight-cat.png" width="67" height="50" alt="Кот пошел по свои делам">
+            <h3 class="weight__title">Набор массы</h3>
+            <p class="weight__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="weight__link" href="#">Каталог pro</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Как это работает</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="example">
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__stat">
+            <div class="example__item">
+              <span class="example__weight">5 кг</span>
+              <span class="example__caption">снижение веса</span>
+            </div>
+            <div class="example__stat__item">
+              <span class="example__time">60 дней</span>
+              <span class="example__caption">затрачено времени</span>
+            </div>
+          </div>
+          <p class="example__spend">Затраты на питание: 15 000 РУБ.</p>
+          <div class="example__slider">
+            <p class="slider__cats"></p>
+            <span class="slider__item">Было</span>
+            <span class="slider__item">Стало</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
+    </main>
+
+    <footer class="page__footer">
+      <img class="page-header__moblogo-image" src="img/logotype-mobile.svg" width="128" height="24" alt="Питание для котов Cat Energy">
+      <ul class="footer__networks-list">
+        <li class="footer__networks-item">
+          <a class="networks-icon" href="#" aria-label="VK">
+            <img class="vk__icon" src="img/vk.svg" width="23" height="16" alt="ВКонтакте">
+          </a>
+        </li>
+        <li class="footer__networks-item">
+          <a class="networks-icon" href="#" aria-label="VK">
+            <img class="instagram__icon" src="img/instagram.svg" width="16" height="16" alt="Инстаграм">
+          </a>
+        </li>
+        <li class="footer__networks-item">
+          <a class="networks-icon" href="#" aria-label="VK">
+            <img class="facebook__icon" src="img/facebook.svg" width="22" height="22" alt="Facebook">
+          </a>
+        </li>
+      </ul>
+      <a class="footer_academy" href="#" aria-label="VK">
+        HTML Academy
+        <img class="academy__logo" src="img/academy.svg" width="27" height="34" alt="HTML Academy">
+      </a>
+    </footer>
   </body>
 </html>
