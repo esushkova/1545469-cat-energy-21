@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype-mobile.svg" width="33" height="38" alt="Иконка с веселым котом">
+      <img src="img/logotype-mobile.svg" width="101" height="18" alt="Питание для котов Cat Energy">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page__main">
+    <h1 class="visually-hidden">Cat energy - здоровое питание вашего кота!</h1>
+    <div class="form-program__title-wrapper">
+      <h2 class="form-program__title">Подбор программы</h2>
+      <p class="form-program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
+
+    <div class="form-program__wrapper">
+      <form class="form-program" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="form-program__info-list info">
+          <li class="info__item">
+            <label class="info__text" for="name">ИМЯ:*</label>
+            <input class="info__input" type="text" id="name" name="cat-name" placeholder="Барсик">
+          </li>
+          <li class="info__item">
+            <label class="info__text" for="weight">Вес (кг):*</label>
+            <input class="info__input" type="text" id="weight" name="cat-weight" placeholder="7">
+          </li>
+          <li class="info__item">
+            <label class="info__text" for="age">Возраст (лет):</label>
+            <input class="info__input" type="text" id="age" name="cat-age" placeholder="7">
+          </li>
+        </ul>
+
+        <ul class="form-program__goal-list goal">
+          <li class="goal__item">
+            <input class="goal__radio" type="radio" name="goal" id="slim" value="slim" checked="checked">
+            <label class="goal__text" for="slim">Похудение</label>
+          </li>
+          <li class="goal__item">
+            <input class="goal__radio" type="radio" name="goal" id="weight" value="weight">
+            <label class="goal__text" for="weight">Набор массы</label>
+          </li>
+          <li class="goal__item">
+            <input class="goal__radio" type="radio" name="goal" id="advice" value="advice">
+            <label class="goal__text" for="advice">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+
+        <h2 class="form-program__contacts-title">Контактные данные (владельца кота)</h3>
+          <ul class="form-program__contacts-list">
+            <li class="form-program__contacts-item">
+              <label class="form-program__contacts-text" for="contact-email">E-mail:*</label>
+              <input class="form-program__contacts-input" type="email" id="contact-email" name="email"
+                value="kuklachev@gmail.com">
+            </li>
+            <li class="form-program__contacts-item">
+              <label class="form-program__contacts-text" for="contact-tel">Телефон:*</label>
+              <input class="form-program__contacts-input" type="tel" id="contact-tel" name="tel"
+                value="8(960)900-60-90">
+            </li>
+          </ul>
+
+          <h2 class="form-program__comment">Комментарий</h2>
+          <textarea class="form-program__comment-area" name="comments" rows="10"
+            cols="40">Расскажите обо всех повадках кота</textarea>
+
+          <div class="form-program__checkbox checkbox">
+            <h2 class="checkbox__title">Дополнительно</h2>
+            <label class="checkbox__option">
+              <input class="checkbox__input" type="checkbox" name="non-sugar" checked />
+              <span class="checkbox__box"> </span>
+              <span class="checkbox__text">Сахарозаменитель</span>
+            </label>
+            <label class="checkbox__option">
+              <input class="checkbox__input" type="checkbox" name="water" />
+              <span class="checkbox__box"> </span>
+              <span class="checkbox__text">Питьевая вода</span>
+            </label>
+            <label class="checkbox__option">
+              <input class="checkbox__input" type="checkbox" name="milk" />
+              <span class="checkbox__box"> </span>
+              <span class="checkbox__text">Молоко</span>
+            </label>
+            <label class="checkbox__option">
+              <input class="checkbox__input" type="checkbox" name="vitamins" />
+              <span class="checkbox__box"> </span>
+              <span class="checkbox__text">Витамины</span>
+            </label>
+          </div>
+          <button class="form-program__button" type="submit">Отправить заявку</button>
+          <small class="form-program__legend">
+            * — Обязательные поля
+          </small>
+      </form>
+    </div>
+  </main>
+
+  <footer class="page__footer">
+    <img src="img/logotype-mobile.svg" width="128" height="24" alt="Питание для котов Cat Energy">
+    <ul class="footer__social-list social">
+      <li class="social__item">
+        <a class="social__icon" href="#" aria-label="VK">
+          <img src="img/vk.svg" width="23" height="16" alt="ВКонтакте">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__icon" href="#" aria-label="Instagram">
+          <img src="img/instagram.svg" width="16" height="16" alt="Инстаграм">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__icon" href="#" aria-label="Facebook">
+          <img src="img/facebook.svg" width="22" height="22" alt="Facebook">
+        </a>
+      </li>
+    </ul>
+    <a class="footer__academy" href="#" aria-label="HTML Academy">
+      HTML Academy
+      <img src="img/academy.svg" width="27" height="34" alt="HTML Academy">
+    </a>
+  </footer>
+</body>
+
+</html>
