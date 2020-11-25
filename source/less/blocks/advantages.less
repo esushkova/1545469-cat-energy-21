@@ -12,13 +12,76 @@
   font-size: 36px;
   line-height: 40px;
   color: @basic-black;
+  margin-left: 20px;
 }
 
 .advantages__description {
+  position: relative;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: @special-dark-grey;
+  margin-left: 100px;
+  margin-right: 21px;
+}
+
+.advantages__item--herb {
+  position: relative;
+}
+
+.advantages__item--powder {
+  position: relative;
+}
+
+.advantages__item--fork {
+  position: relative;
+}
+
+.advantages__item--time {
+  position: relative;
+}
+
+.advantages__item--herb::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/Group\ 1.svg);
+  width: 60px;
+height: 60px;
+top: 0px;
+left: 20px;
+}
+
+.advantages__item--powder::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/Group\ 2.svg);
+  width: 60px;
+height: 60px;
+top: 0px;
+left: 20px;
+
+}
+
+.advantages__item--fork::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/Group\ 3.svg);
+  width: 60px;
+height: 60px;
+top: 0px;
+left: 20px;
+
+}
+
+.advantages__item--time::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/Group\ 4.svg);
+  width: 60px;
+height: 60px;
+top: 0px;
+left: 20px;
+
 }
