@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo">
+  <header class="page__header header">
+    <div class="header__wrapper">
+    <a class="header__logo">
       <img src="img/logotype-mobile.svg" width="33" height="38" alt="Иконка с веселым котом">
       <img src="img/logotype-mobile.svg" width="101" height="18" alt="Питание для котов Cat Energy">
     </a>
@@ -30,11 +32,12 @@
         </ul>
       </div>
     </nav>
+    </div>
   </header>
 
   <main class="page__main">
-    <h1 class="page__main-title">Каталог продукции</h2>
-      <section class="catalog">
+    <h1 class="page__catalog-title">Каталог продукции</h2>
+      <section class="page__catalog catalog">
         <h2 class="visually-hidden">Корм для котов</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -197,7 +200,8 @@
 
   </main>
 
-  <footer class="page__footer">
+  <footer class="page__footer footer">
+    <div class="footer__wrapper">
     <img src="img/logotype-mobile.svg" width="128" height="24" alt="Питание для котов Cat Energy">
     <ul class="footer__social-list social">
       <li class="social__item">
@@ -220,6 +224,7 @@
       HTML Academy
       <img src="img/academy.svg" width="27" height="34" alt="HTML Academy">
     </a>
+    </div>
   </footer>
 </body>
 
