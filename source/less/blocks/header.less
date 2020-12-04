@@ -1,13 +1,46 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
+  flex-direction: column;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @basic-black;
+  padding-top: 11px;
+  padding-bottom: 17px;
 
-  @media (min-width: @tablet-width) {
-    padding: 0 30px;
+  @media (min-width: @tablet-width){
+    flex-direction: row;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    padding: 0 110px;
+.header__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width){
+    flex-direction: row;
   }
+}
+
+.header__item {
+  text-align: center;
+  margin: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: @basic-black;
+}
+
+.header__toggle {
+
+  @media (min-width: @tablet-width){
+    display: none;
+}
 }
