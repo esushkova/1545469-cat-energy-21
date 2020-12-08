@@ -1,3 +1,11 @@
+.catalog-extra {
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+}
+
 .catalog-extra__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -5,8 +13,16 @@
   font-size: 24px;
   line-height: 24px;
   color: @basic-black;
-}
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  }
 
 .catalog-extra__list {
   list-style: none;
+  padding: 0;
 }

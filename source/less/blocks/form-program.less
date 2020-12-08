@@ -5,6 +5,9 @@
   font-size: 36px;
   line-height: 36px;
   color: @basic-black;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 37px;
 }
 
 .form-program__description {
@@ -15,14 +18,8 @@
   line-height: 18px;
   color: @basic-black;
   text-transform: uppercase;
-}
-
-.form-program__info-list {
-  list-style: none;
-}
-
-.form-program__goal-list {
-  list-style: none;
+  margin: 0;
+  margin-bottom: 39px;
 }
 
 .form-program__contacts-title {
@@ -32,10 +29,16 @@
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
+  margin: 0;
+  margin-top: 26px;
 }
 
 .form-program__contacts-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 24px;
 }
 
 .form-program__contacts-item {
@@ -48,6 +51,10 @@
   text-transform: uppercase;
 }
 
+.form-program__contacts-item:first-child {
+  margin-bottom: 14px;
+}
+
 .form-program__contacts-input {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -56,6 +63,9 @@
   line-height: 18px;
   color: @special-dark-grey;
   text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 16px;
 }
 
 .form-program__comment {
@@ -65,6 +75,8 @@
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .form-program__comment-area {
@@ -75,6 +87,23 @@
   line-height: 18px;
   color: @special-dark-grey;
   text-transform: uppercase;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 12px;
+
+  @media (min-width: @desktop-width) {
+width: 100%;
+  }
+}
+
+.form-program__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .form-program__button {
@@ -86,11 +115,28 @@
   color: @basic-white;
   text-transform: uppercase;
   background-color: @basic-green;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-left: 44px;
   padding-right: 44px;
   border: none;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 188px;
+      padding-right: 188px;
+      font-size: 20px;
+      }
 }
 
 .form-program__legend {
@@ -100,4 +146,5 @@
   font-size: 14px;
   line-height: 16px;
   color: @basic-black;
+  text-align: center;
 }

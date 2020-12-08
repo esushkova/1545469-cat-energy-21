@@ -3,46 +3,43 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body class="page__body">
-  <header class="page__header header">
-    <div class="header__wrapper">
-    <a class="header__logo">
-      <img src="img/logotype-mobile.svg" width="33" height="38" alt="Иконка с веселым котом">
-      <img src="img/logotype-mobile.svg" width="101" height="18" alt="Питание для котов Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+  <div class="container">
+    <header class="page__header header">
+      <a class="header__logo">
+        <img src="img/logo-mobile.svg" width="33" height="38" alt="Мобильный логотип">
+      </a>
+      <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    </div>
-  </header>
+      <ul class="header__list">
+        <li class="header__item main-nav__item--active">
+          <a class="header__link">Главная</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </header>
+  </div>
+
 
   <main class="page__main">
     <h1 class="visually-hidden">Cat energy - здоровое питание вашего кота!</h1>
-    <div class="form-program__title-wrapper">
+    <div class="container">
       <h2 class="form-program__title">Подбор программы</h2>
       <p class="form-program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
 
-    <div class="form-program__wrapper">
+    <div class="container">
       <form class="form-program" action="https://echo.htmlacademy.ru" method="post">
         <ul class="form-program__info-list info">
           <li class="info__item">
@@ -94,6 +91,7 @@
 
           <div class="form-program__checkbox checkbox">
             <h2 class="checkbox__title">Дополнительно</h2>
+            <div class="checkbox__list">
             <label class="checkbox__option">
               <input class="checkbox__input" type="checkbox" name="non-sugar" checked />
               <span class="checkbox__box"> </span>
@@ -115,38 +113,55 @@
               <span class="checkbox__text">Витамины</span>
             </label>
           </div>
+          </div>
+          <div class="form-program__button-wrapper">
           <button class="form-program__button" type="submit">Отправить заявку</button>
-          <small class="form-program__legend">
+            <small class="form-program__legend">
             * — Обязательные поля
           </small>
+        </div>
       </form>
     </div>
   </main>
 
   <footer class="page__footer footer">
-    <div class="footer__wrapper">
-    <img src="img/logotype-mobile.svg" width="128" height="24" alt="Питание для котов Cat Energy">
-    <ul class="footer__social-list social">
-      <li class="social__item">
-        <a class="social__icon" href="#" aria-label="VK">
-          <img src="img/vk.svg" width="23" height="16" alt="ВКонтакте">
+
+      <section class="footer__contacts footer__contacts--form">
+        <p class="footer__invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
+      <div class="footer__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003197!2d30.320858716187995!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607163996865!5m2!1sru!2sru"
+          width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+      <div class="container">
+      <div class="footer__social social">
+        <img class="social__logo" src="img/footer-logo 2.svg" width="128" height="24"
+          alt="Питание для котов Cat Energy">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__icon" href="#" aria-label="VK">
+              <img src="img/icon_vkontakte.svg" width="23" height="16" alt="ВКонтакте">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__icon" href="#" aria-label="Instagram">
+              <img src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграм">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__icon" href="#" aria-label="Facebook">
+              <img src="img/icon_facebook.svg" width="22" height="22" alt="Facebook">
+            </a>
+          </li>
+        </ul>
+        <a class="social__academy" href="#" aria-label="HTML Academy">
+          <p class="social__academy-text">HTML Academy</p>
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
-      </li>
-      <li class="social__item">
-        <a class="social__icon" href="#" aria-label="Instagram">
-          <img src="img/instagram.svg" width="16" height="16" alt="Инстаграм">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__icon" href="#" aria-label="Facebook">
-          <img src="img/facebook.svg" width="22" height="22" alt="Facebook">
-        </a>
-      </li>
-    </ul>
-    <a class="footer__academy" href="#" aria-label="HTML Academy">
-      HTML Academy
-      <img src="img/academy.svg" width="27" height="34" alt="HTML Academy">
-    </a>
+      </div>
     </div>
   </footer>
 </body>

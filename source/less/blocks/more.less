@@ -1,3 +1,12 @@
+.more {
+  padding-top: 78px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 90px;
+  }
+}
+
 .more__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -6,6 +15,14 @@
   line-height: 18px;
   color: @special-black;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .more__text {
@@ -15,9 +32,18 @@
   font-size: 12px;
   line-height: 16px;
   color: @special-dark-grey;
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 87px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .more__button {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -27,8 +53,8 @@
   text-transform: uppercase;
   background-color: @basic-grey;
   text-decoration: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 94px;
   padding-right: 94px;
 }

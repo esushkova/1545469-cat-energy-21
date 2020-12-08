@@ -1,3 +1,8 @@
+.checkbox {
+  padding-top: 23px;
+  padding-bottom: 41px;
+}
+
 .checkbox__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -5,6 +10,20 @@
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.checkbox__list {
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: @desktop-width) {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .checkbox__option {
@@ -15,4 +34,13 @@
   line-height: 18px;
   color: @basic-black;
   text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.checkbox__option:last-child {
+  margin-bottom: 0px;
+}
+
+.checkbox__input {
+  margin: 0;
 }

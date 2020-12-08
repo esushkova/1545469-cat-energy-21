@@ -1,4 +1,10 @@
+.footer {
+  background-color: @basic-grey;
+}
+
 .footer__contacts {
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 22px;
   padding-top: 28px;
   background-color: @basic-white;
@@ -8,12 +14,24 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 51px;
     padding-top: 66px;
+    padding-left: 71px;
+    padding-right: 72px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     padding-bottom: 51px;
     padding-top: 66px;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+.footer__contacts--form {
+  background-color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-white;
   }
 }
 
