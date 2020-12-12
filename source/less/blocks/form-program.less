@@ -6,8 +6,8 @@
   line-height: 36px;
   color: @basic-black;
   margin: 0;
-  margin-top: 27px;
-  margin-bottom: 37px;
+  padding-top: 27px;
+  padding-bottom: 37px;
 }
 
 .form-program__description {
@@ -80,6 +80,7 @@
 }
 
 .form-program__comment-area {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -90,9 +91,12 @@
   padding-top: 9px;
   padding-left: 15px;
   padding-right: 12px;
+  width: 250px;
+
 
   @media (min-width: @desktop-width) {
-width: 100%;
+
+width: 280px;
   }
 }
 

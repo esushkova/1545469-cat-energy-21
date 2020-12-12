@@ -11,21 +11,23 @@
 <body class="page__body">
   <div class="container">
     <header class="page__header header">
-      <a class="header__logo">
-        <img src="img/logo-mobile.svg" width="33" height="38" alt="Мобильный логотип">
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="header__nav-wrapper">
+        <a class="header__logo">
+          <img src="img/logo-mobile.svg" width="33" height="38" alt="Мобильный логотип">
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <ul class="header__list">
-        <li class="header__item main-nav__item--active">
-          <a class="header__link">Главная</a>
+        <li class="header__item">
+          <a class="header__link" href="index.html">Главная</a>
         </li>
         <li class="header__item">
           <a class="header__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="header__item">
-          <a class="header__link" href="form.html">Подбор программы</a>
+        <li class="header__item header__item--active">
+          <a class="header__link">Подбор программы</a>
         </li>
       </ul>
     </header>
@@ -92,40 +94,40 @@
           <div class="form-program__checkbox checkbox">
             <h2 class="checkbox__title">Дополнительно</h2>
             <div class="checkbox__list">
-            <label class="checkbox__option">
-              <input class="checkbox__input" type="checkbox" name="non-sugar" checked />
-              <span class="checkbox__box"> </span>
-              <span class="checkbox__text">Сахарозаменитель</span>
-            </label>
-            <label class="checkbox__option">
-              <input class="checkbox__input" type="checkbox" name="water" />
-              <span class="checkbox__box"> </span>
-              <span class="checkbox__text">Питьевая вода</span>
-            </label>
-            <label class="checkbox__option">
-              <input class="checkbox__input" type="checkbox" name="milk" />
-              <span class="checkbox__box"> </span>
-              <span class="checkbox__text">Молоко</span>
-            </label>
-            <label class="checkbox__option">
-              <input class="checkbox__input" type="checkbox" name="vitamins" />
-              <span class="checkbox__box"> </span>
-              <span class="checkbox__text">Витамины</span>
-            </label>
-          </div>
+              <label class="checkbox__option">
+                <input class="checkbox__input" type="checkbox" name="non-sugar" checked />
+                <span class="checkbox__box"> </span>
+                <span class="checkbox__text">Сахарозаменитель</span>
+              </label>
+              <label class="checkbox__option">
+                <input class="checkbox__input" type="checkbox" name="water" />
+                <span class="checkbox__box"> </span>
+                <span class="checkbox__text">Питьевая вода</span>
+              </label>
+              <label class="checkbox__option">
+                <input class="checkbox__input" type="checkbox" name="milk" />
+                <span class="checkbox__box"> </span>
+                <span class="checkbox__text">Молоко</span>
+              </label>
+              <label class="checkbox__option">
+                <input class="checkbox__input" type="checkbox" name="vitamins" />
+                <span class="checkbox__box"> </span>
+                <span class="checkbox__text">Витамины</span>
+              </label>
+            </div>
           </div>
           <div class="form-program__button-wrapper">
-          <button class="form-program__button" type="submit">Отправить заявку</button>
+            <button class="form-program__button" type="submit">Отправить заявку</button>
             <small class="form-program__legend">
-            * — Обязательные поля
-          </small>
-        </div>
+              * — Обязательные поля
+            </small>
+          </div>
       </form>
     </div>
   </main>
 
   <footer class="page__footer footer">
-
+    <div class="container">
       <section class="footer__contacts footer__contacts--form">
         <p class="footer__invite">приглашаем к сотрудничеству дилеров!</p>
         <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -136,7 +138,6 @@
           width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
           tabindex="0"></iframe>
       </div>
-      <div class="container">
       <div class="footer__social social">
         <img class="social__logo" src="img/footer-logo 2.svg" width="128" height="24"
           alt="Питание для котов Cat Energy">

@@ -1,6 +1,32 @@
 .cat-example {
   background-color: @example-grey;
   padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    background-color: @basic-white;
+  position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 0;
+      background-color: #E6E6E6;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+padding-top: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .cat-example__list {
@@ -9,6 +35,7 @@
 }
 
 .cat-example__info {
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -38,11 +65,11 @@
   margin: 0;
   padding-bottom: 33px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 63px;
     }
-
 }
 
 .cat-example__description {
@@ -54,6 +81,12 @@
   color: @special-dark-grey;
   margin: 0;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 54px;
+    }
 }
 
 .cat-example__result {
@@ -70,6 +103,13 @@
   text-align: center;
   padding-bottom: 17px;
   padding-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    }
 }
 
 .cat-example__caption {
@@ -82,6 +122,21 @@
   line-height: 12px;
   color: @special-dark-grey;
   margin-top: -10px;
+  text-align: center;
+  width: 77px;
+  margin-left: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: @basic-white;
+    width: 127px;
+    margin-left: 15px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .cat-example__spend {
@@ -92,16 +147,18 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @basic-black;
-  text-align: center;
   margin: 0;
   margin-top: 24px;
   margin-bottom: 42px;
-  display: flex;
-  flex-direction: row;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: column;
+    text-align: right;
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -113,6 +170,9 @@
 }
 
 .cat-example__item {
-  display: flex;
-  flex-direction: column;
+  width: 162px;
+
+  @media (min-width: @tablet-width) {
+margin-right: 42px;
+  }
 }
