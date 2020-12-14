@@ -4,6 +4,12 @@
   @media (min-width: @tablet-width) {
     padding-top: 0;
   }
+
+  @media (min-width: @desktop-width) {
+display: grid;
+grid-template-columns: 2fr 1fr;
+}
+
 }
 
 .catalog-extra__title {
@@ -25,4 +31,8 @@
 .catalog-extra__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+  }
 }

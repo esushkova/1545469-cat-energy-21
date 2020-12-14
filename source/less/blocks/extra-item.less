@@ -8,11 +8,13 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    flex-wrap: nowrap;
-  }
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
   }
 
 .extra-item__title {
@@ -38,10 +40,19 @@
   color: @special-dark-grey;
   margin: 0;
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+
 }
 
 .extra-item__value {
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+margin-right: 38px;
+}
 }
 
 .extra-item__button {
@@ -59,4 +70,8 @@
   padding-right: 44px;
   text-decoration: none;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+width: 100%;  }
+
 }
