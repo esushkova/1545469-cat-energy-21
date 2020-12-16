@@ -42,8 +42,13 @@ grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
+    width: 229px;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 285px;
+    }
 
 }
 
@@ -51,7 +56,7 @@ grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
 
   @media (min-width: @desktop-width) {
-margin-right: 38px;
+    margin-right: 38px;
 }
 }
 
