@@ -3,17 +3,12 @@
   font-style: normal;
   font-weight: normal;
   color: @basic-black;
+  min-width: 320px;
 }
 
 .page__body {
   background-color: @basic-white;
-  max-width: 320px;
   margin: auto;
-}
-
-.page__header {
-  background-color: @basic-white;
-  display: flex;
 }
 
 .page__catalog-title {
@@ -23,8 +18,16 @@
   font-size: 36px;
   line-height: 36px;
   color: @basic-black;
-}
+  margin: 0;
+  margin-bottom: 41px;
 
-.page__footer {
-  background-color: @basic-grey;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 164px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 165px;
+  }
 }

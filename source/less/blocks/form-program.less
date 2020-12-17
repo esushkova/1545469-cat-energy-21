@@ -5,6 +5,16 @@
   font-size: 36px;
   line-height: 36px;
   color: @basic-black;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 54px;
+    padding-top: 48px;
+  }
 }
 
 .form-program__description {
@@ -15,14 +25,14 @@
   line-height: 18px;
   color: @basic-black;
   text-transform: uppercase;
-}
+  margin: 0;
+  margin-bottom: 39px;
 
-.form-program__info-list {
-  list-style: none;
-}
-
-.form-program__goal-list {
-  list-style: none;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }
 
 .form-program__contacts-title {
@@ -32,13 +42,49 @@
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
+  margin: 0;
+  margin-top: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 75px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .form-program__contacts-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form-program__contacts-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-program__contacts-item:first-child {
+  margin-bottom: 20px;
+}
+
+.form-program__contacts-text {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -46,6 +92,12 @@
   line-height: 18px;
   color: @special-dark-grey;
   text-transform: uppercase;
+  flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-program__contacts-input {
@@ -56,6 +108,15 @@
   line-height: 18px;
   color: @special-dark-grey;
   text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  flex-grow: 2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-program__comment {
@@ -65,9 +126,18 @@
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
+  margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form-program__comment-area {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -75,6 +145,32 @@
   line-height: 18px;
   color: @special-dark-grey;
   text-transform: uppercase;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 12px;
+  width: 100%;
+  margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 174px;
+  }
+}
+
+.form-program__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 82px;
+  }
 }
 
 .form-program__button {
@@ -86,11 +182,30 @@
   color: @basic-white;
   text-transform: uppercase;
   background-color: @basic-green;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-left: 44px;
   padding-right: 44px;
   border: none;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 20px;
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 188px;
+    padding-right: 188px;
+    font-size: 20px;
+  }
 }
 
 .form-program__legend {
@@ -100,4 +215,10 @@
   font-size: 14px;
   line-height: 16px;
   color: @basic-black;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    flex-grow: 2;
+  }
 }

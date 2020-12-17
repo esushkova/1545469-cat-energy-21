@@ -1,21 +1,46 @@
-.promo__wrapper {
-  padding-top: 27px;
-  padding-left: 36px;
-  padding-right: 35px;
+.promo {
   text-align: center;
+  background: linear-gradient(@basic-green 70%, @basic-white 30%);
+  color: @basic-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    background: @basic-white;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 185px;
+  }
 }
 
-
 .promo__title {
+  margin: 0;
+  padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: @basic-white;
-  text-align: center;
-  margin: 0;
-  padding: 0;
   font-size: 36px;
   line-height: 36px;
+  color: @basic-white;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-left: 97px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 114px;
+  }
 }
 
 .promo__slogan {
@@ -25,8 +50,21 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: @basic-white;
-  text-align: center;
+  margin: 0;
+  margin-bottom: 302px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+    color: @basic-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 97px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .promo__button {
@@ -38,9 +76,21 @@
   line-height: 18px;
   color: @basic-white;
   background-color: @basic-green;
+  text-decoration: none;
+  text-transform: uppercase;
   padding-left: 44px;
   padding-right: 44px;
   padding-top: 7px;
   padding-bottom: 7px;
-  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 97px;
+    width: 192px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

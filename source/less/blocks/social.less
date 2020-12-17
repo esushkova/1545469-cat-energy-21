@@ -1,0 +1,47 @@
+
+.social {
+  padding-top: 39px;
+  padding-bottom: 32px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.social__logo {
+  padding-bottom: 32px;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  border-top: 1px solid @another-grey;
+  border-bottom: 1px solid @another-grey;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.social__academy {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-dark-grey;
+  padding-top: 28px;
+}
+
+.social__academy-text {
+  margin: 0;
+}

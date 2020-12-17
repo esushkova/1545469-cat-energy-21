@@ -1,16 +1,106 @@
-.footer__social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+.footer {
+  background-color: @basic-grey;
 }
 
-.footer__academy {
-  text-decoration: none;
-  font-family: "Arial", sans-serif;
+.footer__contacts {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-top: 28px;
+  background-color: @basic-white;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 51px;
+    padding-top: 66px;
+    padding-left: 71px;
+    padding-right: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 110px;
+    top: 1800px;
+    padding-bottom: 51px;
+    padding-top: 66px;
+    padding-left: 76px;
+    padding-right: 70px;
+    width: 570px;
+    z-index: 3;
+  }
+}
+
+.footer__contacts--form {
+  background-color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-white;
+  }
+}
+
+.footer__invite {
+  width: 140px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
+  color: @special-black;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 21px;
+    padding-right: 87px;
+    margin-right: 100px;
+  }
+}
+
+.footer__address {
+  width: 171px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
   color: @special-dark-grey;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
+  }
+}
+
+.footer__map {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    }
+}
+
+
+.footer__city {
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+  }
 }
