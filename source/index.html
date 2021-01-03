@@ -20,13 +20,13 @@
         </button>
       </div>
       <ul class="header__list header__list--index">
-        <li class="header__item header__item--active">
+        <li class="header__item header__item--index header__item--active">
           <a class="header__link header__link--index">Главная</a>
         </li>
-        <li class="header__item">
-          <a class="header__link header__link--index" href="catalog.html">Каталог продукции</a>
+        <li class="header__item header__item--index">
+          <a class="header__link header__item--index header__link--index" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="header__item">
+        <li class="header__item header__item--index">
           <a class="header__link header__link--index" href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -41,6 +41,11 @@
       <div class="container">
         <h2 class="promo__title">Функциональное<br> питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
+            <img class="promo__img" src="img/index-can-mobile.png" alt="Банка кошачьего корма" width="280" height="270">
+      </picture>
         <a class="button promo__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -49,15 +54,15 @@
       <div class="container">
         <ul class="programs__list">
           <li class="programs__item">
-            <h3 class="programs__title">Похудение</h3>
+            <h3 class="programs__title programs__title--slim">Похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programs__link" href="#">Каталог slim</a>
           </li>
 
           <li class="programs__item">
-            <h3 class="programs__title">Набор массы</h3>
-            <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+            <h3 class="programs__title programs__title--plump">Набор массы</h3>
+            <p class="programs__description programs__description--plump">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
               Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programs__link" href="#">Каталог pro</a>
           </li>
@@ -80,7 +85,7 @@
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item advantages__item--time">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -91,7 +96,7 @@
         <div class="cat-example__stat">
           <h2 class="cat-example__title">Живой пример</h2>
           <p class="cat-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-            Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+            Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br> по-прежнему
             спит по 16 часов в день.</p>
           <div class="cat-example__info">
             <div class="cat-example__list">
@@ -104,19 +109,23 @@
                 <span class="cat-example__caption">затрачено<br> времени</span>
               </div>
             </div>
-            <p class="cat-example__spend"><span>Затраты на питание:</span><span>15 000 РУБ.</span></p>
+            <p class="cat-example__spend"><span class="cat-example__cost">Затраты на питание:</span><span>15 000 РУБ.</span></p>
           </div>
         </div>
-
+      </div>
         <div class="cat-example__slider slider">
-          <div class="slider__img"></div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/cat-fat.png">
+            <source media="(min-width: 768px)" srcset="img/cat-fat.png">
+          <img class="slider__img" src="img/cat-before-mobile.png" alt="Толстый кот" width="311" height="232">
+        </picture>
           <p class="slider__cats">
             <button class="slider__button" type="button">Было</button>
             <button class="slider__button" type="button">Стало</button>
           </p>
         </div>
 
-      </div>
+
     </section>
   </main>
 
@@ -125,31 +134,37 @@
       <p class="footer__invite">приглашаем к сотрудничеству дилеров!</p>
       <p class="footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </section>
-    <div class="footer__map-wrapper">
+
       <iframe class="footer__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003197!2d30.320858716187995!3d59.938719169054025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607163996865!5m2!1sru!2sru"
         width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
         tabindex="0"></iframe>
-    </div>
 
     <div class="container">
       <div class="footer__social social">
-        <img class="social__logo" src="img/footer-logo 2.svg" width="128" height="24"
+        <img class="social__logo" src="img/footer-logo-mobile.svg" width="128" height="24"
           alt="Питание для котов Cat Energy">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__icon" href="#" aria-label="VK">
-              <img src="img/icon_vkontakte.svg" width="23" height="16" alt="ВКонтакте">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-vkontakte-tablet.svg">
+              <img src="img/icon-vkontakte.svg" width="23" height="16" alt="ВКонтакте">
+            </picture>
             </a>
           </li>
           <li class="social__item">
             <a class="social__icon" href="#" aria-label="Instagram">
-              <img src="img/icon_instagram.svg" width="16" height="16" alt="Инстаграм">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-instagram-tablet.svg">
+              <img src="img/icon-instagram.svg" width="16" height="16" alt="Инстаграм">
             </a>
           </li>
           <li class="social__item">
             <a class="social__icon" href="#" aria-label="Facebook">
-              <img src="img/icon_facebook.svg" width="22" height="22" alt="Facebook">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-facebook-tablet.svg">
+              <img src="img/icon-facebook.svg" width="22" height="22" alt="Facebook">
             </a>
           </li>
         </ul>
