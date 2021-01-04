@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 43px;
+    counter-reset: section;
   }
 
   @media (min-width: @desktop-width) {
@@ -92,6 +93,25 @@
   }
 }
 
+.advantages__item--herb::before {
+  @media (min-width: @tablet-width) {
+    content: "" counter(section) "";
+    counter-increment: section;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+    left: 118px;
+    top: 0px;
+    z-index: -1;
+  }
+}
+
 .advantages__item--powder {
   position: relative;
 
@@ -115,6 +135,25 @@
     height: 80px;
     top: 40px;
     left: 1px;
+  }
+}
+
+.advantages__item--powder::before {
+  @media (min-width: @tablet-width) {
+    content: "" counter(section) "";
+    counter-increment: section;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+    left: 118px;
+    top: 0px;
+    z-index: -1;
   }
 }
 
@@ -143,6 +182,25 @@
   }
 }
 
+.advantages__item--fork::before {
+  @media (min-width: @tablet-width) {
+    content: "" counter(section) "";
+    counter-increment: section;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+    left: 118px;
+    top: 35px;
+    z-index: -1;
+  }
+}
+
 .advantages__item--time {
   position: relative;
 
@@ -168,5 +226,24 @@
     height: 80px;
     top: 74px;
     left: 0;
+  }
+}
+
+.advantages__item--time::before {
+  @media (min-width: @tablet-width) {
+    content: "" counter(section) "";
+    counter-increment: section;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: #F2F2F2;
+    left: 118px;
+    top: 35px;
+    z-index: -1;
   }
 }

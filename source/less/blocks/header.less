@@ -1,23 +1,22 @@
 .header {
-  display: flex;
-  flex-direction: column;
   padding-top: 11px;
   padding-bottom: 15px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .header__list {
-  display: flex;
-  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: none;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     display: flex;
   }
