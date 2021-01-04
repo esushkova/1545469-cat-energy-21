@@ -106,9 +106,25 @@
   text-decoration: none;
   color: @basic-black;
 
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   @media (min-width: @desktop-width) {
     &--index {
       color: #ffffff;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
     }
   }
 }
