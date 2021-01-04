@@ -7,6 +7,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 44px;
+  }
 }
 
 .header__list {
@@ -25,8 +29,8 @@
   @media (min-width: @desktop-width) {
     content: "";
     width: 50%;
-    height: 694px;
-    background: rgba(104, 183, 56, 0.85);
+    height: 691px;
+    background-image: url("../../img/green-cat-desktop.jpg");
     position: absolute;
     top: 0;
     left: 50%;
@@ -69,10 +73,7 @@
     font-size: 20px;
     line-height: 30px;
     position: relative;
-
-    /*&--active {
-      border-bottom: 2px solid #ffffff;
-    }*/
+    padding-bottom: 6px;
   }
 }
 
