@@ -3,22 +3,34 @@
   padding-bottom: 43px;
   padding-left: 58px;
   padding-right: 61px;
-  background-image: url("../../img/catalog-promo-mobile.png");
+  background-image: url("../img/catalog-promo-mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-photo-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/catalog-promo-tablet.png");
+    background-image: url("../img/catalog-promo-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-photo-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/catalog-promo-desktop.png");
+    background-image: url("../img/catalog-promo-desktop.png");
     background-size: auto;
     padding-top: 185px;
     padding-bottom: 42px;
     padding-left: 41px;
     padding-right: 43px;
     margin-left: 80px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-photo-desktop@2x.png");
+    }
   }
 }
 
