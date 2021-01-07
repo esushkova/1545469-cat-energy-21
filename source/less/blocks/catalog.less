@@ -4,6 +4,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -17,26 +18,50 @@
 }
 
 .catalog__image-wrapper {
-  padding-left: 36px;
-  padding-right: 36px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 36px;
+  margin-top: 12px;
 }
 
 .catalog__image-wrapper--big {
-  padding-left: 27px;
-  padding-right: 28px;
-  padding-top: 10px;
-  padding-bottom: 4px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 9px;
+  margin-left: 28px;
+  margin-right: -8px;
+}
+
+.catalog__image-wrapper--fish {
+  margin-top: 25px;
+  margin-left: 36px;
+  margin-right: 0px;
+}
+
+.catalog__image-wrapper--buckwheat {
+  margin-top: 28px;
+  margin-left: 36px;
+  margin-right: 0px;
+}
+
+.catalog__image-wrapper--rice {
+  margin-top: 22px;
+  margin-left: 34px;
+  margin-right: -2px;
 }
 
 .catalog__item-wrapper {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
+  margin-top: 21px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     margin-bottom: 33px;
     text-align: center;
   }
@@ -45,7 +70,12 @@
 .catalog__card-wrapper {
   display: flex;
   flex-direction: column;
-  width: 140px;
+  margin-left: 0;
+}
+
+.catalog__card-list {
+  margin: 0;
+  margin-bottom: 22px;
 }
 
 .catalog__list-wrapper {
@@ -62,9 +92,10 @@
 .catalog__item {
   display: flex;
   flex-direction: column;
-  padding-top: 21px;
-  padding-bottom: 26px;
+  padding-top: 0;
+  padding-bottom: 0;
   border-top: 1px solid #ebebeb;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -110,7 +141,7 @@
 
 .catalog__title {
   margin: 0;
-  margin-bottom: -3px;
+  margin-bottom: 13px;
   width: 76px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -120,7 +151,9 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    text-align: center;
+    width: 174px;
+    padding-left: 16px;
+    margin-left: 29px;
   }
 
   @media (min-width: @desktop-width) {
@@ -187,9 +220,8 @@
   text-align: center;
   padding-top: 12px;
   padding-bottom: 10px;
-  padding-left: 103px;
+  padding-left: 109px;
   padding-right: 109px;
-  width: auto;
 
   &:hover {
     background-color: @basic-green-2;
