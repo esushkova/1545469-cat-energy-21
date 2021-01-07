@@ -3,18 +3,20 @@
   margin: 0;
   padding: 0;
   display: grid;
+  margin-bottom: 45px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 43px;
     counter-reset: section;
+    margin-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 66px;
+    margin-bottom: 0;
   }
 }
 
@@ -34,8 +36,8 @@
     margin-bottom: 32px;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 34px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -64,7 +66,7 @@
 }
 
 .advantages__item:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .advantages__description {
@@ -83,14 +85,14 @@
 .advantages__item--herb::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/leaf-icon.svg");
+  background-image: url("../img/leaf-icon.svg");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   top: -2px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/leaf-icon-tablet.svg");
+    background-image: url("../img/leaf-icon-tablet.svg");
     width: 80px;
     height: 80px;
     top: 40px;
@@ -131,14 +133,14 @@
 .advantages__item--powder::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/powder-icon.svg");
+  background-image: url("../img/powder-icon.svg");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   top: -2px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/powder-icon-tablet.svg");
+    background-image: url("../img/powder-icon-tablet.svg");
     width: 80px;
     height: 80px;
     top: 40px;
@@ -181,14 +183,14 @@
 .advantages__item--fork::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/fork-icon.svg");
+  background-image: url("../img/fork-icon.svg");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   top: -2px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/fork-icon-tablet.svg");
+    background-image: url("../img/fork-icon-tablet.svg");
     width: 80px;
     height: 80px;
     top: 74px;
@@ -225,6 +227,10 @@
 .advantages__item--time {
   position: relative;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     padding-top: 187px;
     margin-left: 30px;
@@ -240,14 +246,14 @@
 .advantages__item--time::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/time-icon.svg");
+  background-image: url("../img/time-icon.svg");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   top: -2px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/time-icon-tablet.svg");
+    background-image: url("../img/time-icon-tablet.svg");
     width: 80px;
     height: 80px;
     top: 74px;
