@@ -8,6 +8,7 @@
 }
 
 .more__title {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -28,6 +29,26 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 23px;
   }
+}
+
+.more__title::after {
+  content: "";
+  position: absolute;
+  top: -41px;
+  width: 30px;
+  left: 126px;
+  border: 1px solid @plus-grey;
+  transform: rotate(90deg);
+}
+
+.more__title::before {
+  content: "";
+  position: absolute;
+  top: -41px;
+  width: 30px;
+  left: 126px;
+  border: 1px solid @plus-grey;
+  transform: rotate(180deg);
 }
 
 .more__text {
