@@ -16,7 +16,7 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="header__logo" src="img/logo-header-mobile.svg" width="191" height="37.61" alt="логотип">
+          <img class="header__logo" src="img/logo-header-mobile.svg" alt="логотип">
         </picture>
         </a>
         <button class="header__toggle" type="button">
@@ -120,13 +120,15 @@
         <div class="cat-example__slider slider">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/cat-fat.png">
-            <source media="(min-width: 768px)" srcset="img/cat-fat.png">
-          <img class="slider__img" src="img/cat-before-mobile.png" alt="Толстый кот" width="311" height="232">
+            <source media="(min-width: 768px)" srcset="img/double-cat-tablet.png 1x, img/double-cat-tablet.png 2x">
+          <img class="slider__img" src="img/cat-before-mobile.png" alt="Толстый кот">
         </picture>
+        <div class="slider__toggle">
           <p class="slider__cats">
             <button class="slider__button" type="button">Было</button>
             <button class="slider__button" type="button">Стало</button>
           </p>
+        </div>
         </div>
 
 

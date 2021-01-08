@@ -9,31 +9,105 @@
   border: none;
   outline: none;
   background-color: @example-grey;
+  margin-right: 108px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     display: block;
     background-color: @basic-grey;
+    margin-right: 94px;
   }
 }
 
 .slider__cats {
+  position: relative;
   margin: 0;
   display: flex;
-  justify-content: space-between;
-  margin-top: 31px;
-  padding-bottom: 36px;
+  margin-top: 33px;
+  padding-bottom: 34px;
+  padding-left: 57px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    top: 3px;
+    left: 119px;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
 
   @media (min-width: @tablet-width) {
-    padding-left: 56px;
-    padding-right: 62px;
+    position: relative;
+    padding-left: 92px;
+    padding-right: 0;
     justify-content: space-between;
-    margin-top: -7px;
+    margin-top: -8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 428px;
+      height: 6px;
+      left: 170px;
+      top: 13px;
+      background: #DCDCDC;
+      border-radius: 6px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin-left: -300px;
+  }
+}
+
+.slider__toggle {
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    left: 125px;
+    top: 7px;
+    background: #68B738;
+    border-radius: 6px;
+    z-index: 3;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background: #FFFFFF;
+      border: 1px solid #CDCDCD;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      left: 366px;
+      top: -2px;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      left: 380px;
+      top: 12px;
+      border-radius: 50%;
+      background: #68B738;
+      z-index: 3;
+    }
   }
 }
 
