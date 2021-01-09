@@ -54,10 +54,19 @@
 }
 
 .social__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 28.5px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-right: 18px;
   }
 }
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
 
 .social__academy {
   display: flex;
