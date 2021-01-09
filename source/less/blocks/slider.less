@@ -16,8 +16,16 @@
     line-height: 30px;
     display: block;
     background-color: @basic-grey;
-    margin-right: 94px;
+    margin-right: 461px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 461px
+  }
+}
+
+.slider__button:last-child {
+  margin-right: 0;
 }
 
 .slider__cats {
@@ -45,7 +53,6 @@
     position: relative;
     padding-left: 92px;
     padding-right: 0;
-    justify-content: space-between;
     margin-top: -8px;
 
     &::before {
@@ -61,7 +68,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -300px;
+    margin-left: -779px;
+    margin-top: 28px;
   }
 }
 
@@ -109,6 +117,73 @@
       z-index: 3;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background: #FFFFFF;
+      border: 1px solid #CDCDCD;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      left: -413px;
+      top: -2px;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      left: -399px;
+      top: 12px;
+      border-radius: 50%;
+      background: #68B738;
+      z-index: 3;
+    }
+  }
+}
+
+.slider__toggle:hover {
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background: #FFFFFF;
+      border: 1px solid #CDCDCD;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      left: 366px;
+      top: -2px;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+      z-index: 2;
+    }
+  }
+}
+
+.slider__toggle:active {
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background: #FFFFFF;
+      border: 1px solid #68B738;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      left: 366px;
+      top: -2px;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+      z-index: 2;
+    }
+  }
 }
 
 .slider {
@@ -137,7 +212,7 @@
 
   @media (min-width: @desktop-width) {
     height: 536px;
-    margin-left: -768px;
+    margin-left: -782px;
     margin-top: -71px;
   }
 }

@@ -20,6 +20,14 @@
 .social__logo {
   margin-bottom: 26px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
@@ -70,4 +78,39 @@
 
 .social__academy-text {
   margin: 0;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+.social__academy-logo {
+  &:hover path {
+    fill: rgba(104, 183, 56, 1)
+  }
+
+  &:active path {
+    fill: rgba(104, 183, 56, 0.3)
+  }
+}
+
+.social__icon-svg {
+  &:hover path {
+    fill: rgba(104, 183, 56, 1)
+  }
+
+  &:active path {
+    fill: rgba(104, 183, 56, 0.3)
+  }
+}
+
+.social__fb-svg {
+  &:hover path {
+    stroke: rgba(104, 183, 56, 1)
+  }
+
+  &:active path {
+    stroke: rgba(104, 183, 56, 0.3)
+  }
+}
+
