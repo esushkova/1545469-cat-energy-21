@@ -51,29 +51,32 @@
           <ul class="form-program__info-list info">
             <li class="info__item">
               <label class="info__text" for="name">ИМЯ:*</label>
-              <input class="info__input" type="text" id="name" name="cat-name" placeholder="Барсик">
+              <input class="info__input" type="text" id="name" name="cat-name" value="Барсик" required>
             </li>
             <li class="info__item">
               <label class="info__text" for="weight">Вес (кг):*</label>
-              <input class="info__input" type="text" id="weight" name="cat-weight" placeholder="7">
+              <input class="info__input" type="text" id="weight" name="cat-weight" value="7" required>
             </li>
             <li class="info__item">
               <label class="info__text" for="age">Возраст (лет):</label>
-              <input class="info__input" type="text" id="age" name="cat-age" placeholder="7">
+              <input class="info__input" type="text" id="age" name="cat-age" value="7" required>
             </li>
           </ul>
 
           <ul class="form-program__goal-list goal">
             <li class="goal__item">
               <input class="goal__radio" type="radio" name="goal" id="slim" value="slim" checked="checked">
+              <span class="goal__real-radio"></span>
               <label class="goal__text" for="slim">Похудение</label>
             </li>
             <li class="goal__item">
-              <input class="goal__radio" type="radio" name="goal" id="weight" value="weight">
-              <label class="goal__text" for="weight">Набор массы</label>
+              <input class="goal__radio" type="radio" name="goal" id="strong" value="weight">
+              <span class="goal__real-radio"></span>
+              <label class="goal__text" for="strong">Набор массы</label>
             </li>
             <li class="goal__item">
               <input class="goal__radio" type="radio" name="goal" id="advice" value="advice">
+              <span class="goal__real-radio"></span>
               <label class="goal__text" for="advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -83,12 +86,11 @@
           <ul class="form-program__contacts-list">
             <li class="form-program__contacts-item">
               <label class="form-program__contacts-text" for="contact-email">E-mail:*</label>
-              <input class="form-program__contacts-input" type="email" id="contact-email" name="email"
-                value="kuklachev@gmail.com">
+              <input class="form-program__contacts-input" type="email" id="contact-email" name="email" required value="kuklachev@gmail.com">
             </li>
             <li class="form-program__contacts-item">
               <label class="form-program__contacts-text" for="contact-tel">Телефон:*</label>
-              <input class="form-program__contacts-input" type="tel" id="contact-tel" name="tel"
+              <input class="form-program__contacts-input" type="tel" id="contact-tel" name="tel" required
                 value="8(960)900-60-90">
             </li>
           </ul>

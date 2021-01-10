@@ -67,6 +67,18 @@
   flex-grow: 2;
   border: 1px solid #e7e7e7;
 
+  &:hover {
+    outline: 1px solid #CDCDCD;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #FF8282;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
