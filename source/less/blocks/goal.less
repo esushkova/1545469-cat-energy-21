@@ -49,14 +49,51 @@
 }
 
 .goal__radio {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+  position: relative;
+  width: 0;
+  height: 0;
   clip: rect(0 0 0 0);
   margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/radiobutton.svg);
+    width: 30px;
+    height: 30px;
+    top: -23px;
+  }
 }
 
+.goal__radio:hover {
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/radiobutton-hover.svg);
+    width: 30px;
+    height: 30px;
+    top: -23px;
+  }
+}
+
+.goal__radio:checked {
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/radiobutton-active.svg);
+    width: 13.5px;
+    height: 13.55px;
+    top: -14.5px;
+    left: 7.5px;
+  }
+}
+
+.goal__radio:disabled + .goal__text {
+opacity: 0.3;
+}
+
+
+/*
 .goal__real-radio {
   position: absolute;
   width: 30px;
@@ -74,3 +111,4 @@
   border-radius: 50%;
   background-color: @basic-green;
 }
+*/
