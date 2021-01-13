@@ -1,5 +1,5 @@
 .more {
-  padding-top: 78px;
+  margin-top: 78px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -8,6 +8,7 @@
 }
 
 .more__title {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -17,6 +18,7 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 8px;
+  margin-top: 2px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 8px;
@@ -27,6 +29,26 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 23px;
   }
+}
+
+.more__title::after {
+  content: "";
+  position: absolute;
+  top: -41px;
+  width: 30px;
+  left: 126px;
+  border: 1px solid @plus-grey;
+  transform: rotate(90deg);
+}
+
+.more__title::before {
+  content: "";
+  position: absolute;
+  top: -41px;
+  width: 30px;
+  left: 126px;
+  border: 1px solid @plus-grey;
+  transform: rotate(180deg);
 }
 
 .more__text {
@@ -62,6 +84,15 @@
   padding-bottom: 10px;
   padding-left: 94px;
   padding-right: 94px;
+
+  &:hover {
+    background-color: @special-grey-3;
+  }
+
+  &:active {
+    background-color: @special-grey-3;
+    color: rgba(68, 68, 68, 0.3);
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 37px;

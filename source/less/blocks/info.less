@@ -42,11 +42,14 @@
   line-height: 18px;
   color: @special-dark-grey;
   text-transform: uppercase;
-  flex-grow: 1;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -63,6 +66,18 @@
   text-transform: uppercase;
   flex-grow: 2;
   border: 1px solid #e7e7e7;
+
+  &:hover {
+    outline: 1px solid @special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid @special-dark-grey;
+  }
+
+  &:invalid {
+    outline: 2px solid @error-red;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

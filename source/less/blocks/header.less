@@ -1,23 +1,29 @@
 .header {
-  display: flex;
-  flex-direction: column;
   padding-top: 11px;
-  padding-bottom: 17px;
+  padding-bottom: 12px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 48px;
+    padding-bottom: 13px;
   }
 }
 
 .header__list {
-  display: flex;
-  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: none;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
   }
 }
@@ -25,10 +31,15 @@
 .header__list--index::before {
   @media (min-width: @desktop-width) {
     content: "";
-    width: 100%;
+    width: 50%;
     height: 694px;
-    background: rgba(104, 183, 56, 0.85);
+    background-image: url("../img/green-cat-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
     position: absolute;
+    background-color: rgba(104, 183, 56, 0.85);
+
     top: 0;
     left: 50%;
   }
@@ -58,7 +69,7 @@
     color: @basic-black;
     margin-right: 35px;
     border-top: none;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     border-bottom: none;
 
     &--active {
@@ -69,12 +80,14 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
     position: relative;
+    padding-bottom: 6px;
+  }
+}
 
-    &--active {
-      border-bottom: 2px solid #ffffff;
-    }
+.header__item--active.header__item--index {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid #ffffff;
   }
 }
 
@@ -83,8 +96,6 @@
 
   @media (min-width: @tablet-width) {
     border-top: none;
-    width: 168px;
-    margin-right: -12px;
   }
 
   @media (min-width: @desktop-width) {
@@ -103,9 +114,25 @@
   text-decoration: none;
   color: @basic-black;
 
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   @media (min-width: @desktop-width) {
     &--index {
       color: #ffffff;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
     }
   }
 }
@@ -129,8 +156,8 @@
   position: absolute;
   width: 24px;
   height: 1.5px;
-  top: 5px;
-  left: 3px;
+  top: 2px;
+  left: 6px;
   background-color: #000000;
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
@@ -139,5 +166,17 @@
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 0;
+}
+
+.header__logo {
+  margin-top: -10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

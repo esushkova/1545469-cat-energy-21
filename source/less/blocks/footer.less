@@ -1,34 +1,37 @@
 .footer {
   background-color: @basic-grey;
+  position: relative;
 }
 
 .footer__contacts {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
   padding-top: 28px;
   background-color: @basic-white;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 51px;
-    padding-top: 66px;
+    padding-bottom: 52px;
+    padding-top: 68px;
     padding-left: 71px;
     padding-right: 72px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    left: 110px;
-    top: 1800px;
-    padding-bottom: 51px;
-    padding-top: 66px;
+    top: 95px;
+    padding-bottom: 57px;
+    padding-top: 59px;
     padding-left: 76px;
     padding-right: 70px;
     width: 570px;
     z-index: 3;
+    justify-content: normal;
   }
+}
+
+.footer__contacts--catalog {
+  background-color: @basic-grey;
 }
 
 .footer__contacts--form {
@@ -49,6 +52,7 @@
   text-transform: uppercase;
   color: @special-black;
   margin: 0;
+  margin-right: 18px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -59,13 +63,42 @@
     width: 163px;
     font-size: 20px;
     line-height: 21px;
-    padding-right: 87px;
-    margin-right: 100px;
+    padding-right: 0;
+    margin-right: 87px;
+    margin-top: 9px;
   }
 }
 
+.footer__address-wrapper {
+  margin: 0;
+}
+
 .footer__address {
-  width: 171px;
+  width: 140px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: @special-dark-grey;
+  margin: 0;
+  margin-bottom: -5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 155px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+}
+
+.footer__city {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -77,12 +110,18 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
   }
 
   @media (min-width: @desktop-width) {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    width: 155px;
+    color: @special-dark-grey;
   }
 }
 
@@ -91,16 +130,18 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    height: 400px;
   }
+}
+
+.footer__contacts-wrapper {
+  background-color: @basic-white;
 
   @media (min-width: @desktop-width) {
     position: relative;
-    }
+  }
 }
 
-
-.footer__city {
-  @media (min-width: @tablet-width) {
-    margin-top: 30px;
-  }
+.footer__contacts-wrapper--catalog {
+  background-color: @basic-grey;
 }

@@ -3,9 +3,9 @@
   padding-top: 27px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 43px;
-    background-color: @basic-white;
-  position: relative;
+    padding-top: 44px;
+    position: relative;
+    background: linear-gradient(@basic-white 0%, @basic-white 57.3%, @basic-grey 57.3%, @basic-grey 100%);
 
     &::after {
       content: "";
@@ -13,15 +13,17 @@
       height: 1px;
       width: 100%;
       top: 0;
-      background-color: #E6E6E6;
+      background-color: #e6e6e6;
     }
   }
 
   @media (min-width: @desktop-width) {
-padding-top: 0;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(@basic-white 0%, @basic-white 22.5%, @basic-grey 22.5%, @basic-grey 100%);
+    margin-bottom: -10px;
 
     &::after {
       display: none;
@@ -32,10 +34,14 @@ justify-content: space-between;
 .cat-example__list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    justify-content: normal;
+  }
 }
 
 .cat-example__info {
-
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -43,6 +49,7 @@ justify-content: space-between;
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -63,13 +70,17 @@ justify-content: space-between;
   line-height: 40px;
   color: @basic-black;
   margin: 0;
-  padding-bottom: 33px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 63px;
-    }
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 148px;
+  }
 }
 
 .cat-example__description {
@@ -80,13 +91,26 @@ justify-content: space-between;
   line-height: 18px;
   color: @special-dark-grey;
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 54px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+    margin-bottom: 67px;
+
+    br {
+      display: none;
     }
+  }
 }
 
 .cat-example__result {
@@ -100,16 +124,19 @@ justify-content: space-between;
   font-size: 24px;
   line-height: 24px;
   color: @basic-black;
+  text-transform: uppercase;
   text-align: center;
   padding-bottom: 17px;
   padding-top: 14px;
+  width: 124px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
     padding-top: 15px;
-    padding-bottom: 25px;
-    }
+    padding-bottom: 18px;
+    width: 162px;
+  }
 }
 
 .cat-example__caption {
@@ -124,18 +151,22 @@ justify-content: space-between;
   margin-top: -10px;
   text-align: center;
   width: 77px;
-  margin-left: 40px;
+  margin-left: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 14px;
     background-color: @basic-white;
     width: 127px;
-    margin-left: 15px;
+    margin-left: 17px;
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-grey;
   }
 }
 
@@ -148,31 +179,48 @@ justify-content: space-between;
   text-transform: uppercase;
   color: @basic-black;
   margin: 0;
-  margin-top: 24px;
+  margin-top: 19px;
   margin-bottom: 42px;
-  text-align: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     text-align: right;
     margin: 0;
+    margin-top: 11px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 56px;
     margin-bottom: 75px;
   }
 }
 
-.cat-example__item {
-  width: 162px;
+.cat-example__cost {
+  margin-left: 46px;
+  margin-right: 3px;
 
   @media (min-width: @tablet-width) {
-margin-right: 42px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 63px;
+    margin-left: 0;
+  }
+}
+
+.cat-example__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 42px;
+  }
+}
+
+.cat-example__stat {
+  @media (min-width: @desktop-width) {
+    width: 50%;
   }
 }
