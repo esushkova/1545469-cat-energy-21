@@ -10,17 +10,27 @@
   outline: none;
   background-color: @example-grey;
   margin-right: 108px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+  padding: 0;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border-bottom: 1px solid @example-grey;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     display: block;
     background-color: @basic-grey;
-    margin-right: 461px;
+    margin-right: 488px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 461px;
+    margin-right: 488px;
   }
 }
 
