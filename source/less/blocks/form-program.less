@@ -248,6 +248,7 @@
 }
 
 .form-program__button {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -260,8 +261,20 @@
   padding-bottom: 7px;
   padding-left: 44px;
   padding-right: 44px;
-  border: none;
   margin-bottom: 28px;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active {
+    background-color: @basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    border: none;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 13px;

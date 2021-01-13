@@ -10,17 +10,23 @@
   outline: none;
   background-color: @example-grey;
   margin-right: 108px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+  padding: 0;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     display: block;
     background-color: @basic-grey;
-    margin-right: 461px;
+    margin-right: 488px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 461px;
+    margin-right: 488px;
   }
 }
 
@@ -101,7 +107,7 @@
       left: 366px;
       top: -2px;
       box-sizing: border-box;
-      box-shadow: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
       z-index: 2;
     }
 
@@ -130,7 +136,7 @@
       left: -413px;
       top: -2px;
       box-sizing: border-box;
-      box-shadow: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
       z-index: 2;
     }
 
@@ -161,7 +167,7 @@
       left: 366px;
       top: -2px;
       box-sizing: border-box;
-      box-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
       z-index: 2;
     }
   }
@@ -178,7 +184,7 @@
       left: -413px;
       top: -2px;
       box-sizing: border-box;
-      box-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
       z-index: 2;
     }
   }
@@ -197,7 +203,7 @@
       left: 366px;
       top: -2px;
       box-sizing: border-box;
-      box-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
       z-index: 2;
     }
   }
@@ -214,7 +220,7 @@
       left: -413px;
       top: -2px;
       box-sizing: border-box;
-      box-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
       z-index: 2;
     }
   }
