@@ -5,7 +5,7 @@
   &::before {
     content: "";
     position: absolute;
-    border: 1px solid #D9D9D9;
+    border: 1px solid @another-grey;
     left: -20px;
     right: -20px;
     top: 65px;
@@ -19,7 +19,7 @@
     justify-content: space-between;
 
     &::before {
-      display: none;    }
+      display: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -85,7 +85,7 @@
     border-bottom: none;
 
     &--active {
-      border-bottom: 2px solid #68b738;
+      border-bottom: 2px solid @basic-green;
     }
   }
 
@@ -99,7 +99,7 @@
 
 .header__item--active.header__item--index {
   @media (min-width: @desktop-width) {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid @basic-white;
   }
 }
 
@@ -136,7 +136,7 @@
 
   @media (min-width: @desktop-width) {
     &--index {
-      color: #ffffff;
+      color: @basic-white;
 
       &:hover {
         color: rgba(255, 255, 255, 0.6);
@@ -170,8 +170,8 @@
   height: 1.5px;
   top: 2px;
   left: 6px;
-  background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  background-color: @basic-black;
+  box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
 }
 
 .header__nav-wrapper {
