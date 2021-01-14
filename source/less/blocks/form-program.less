@@ -54,7 +54,7 @@
     width: 99px;
     height: 0;
     border: 2px solid #68B738;
-    left: 194px;
+    right: -20px;
     top: 14px;
   }
 
@@ -63,10 +63,50 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 145px;
+      height: 0;
+      border: 2px solid #68B738;
+      right: -30px;
+      top: 14px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 0;
+      border: 2px solid #68B738;
+      left: -70px;
+      top: 14px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 778px;
+      height: 0;
+      border: 2px solid #68B738;
+      right: -110px;
+      top: 14px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 0;
+      border: 2px solid #68B738;
+      left: -110px;
+      top: 14px;
+    }
   }
 }
 
@@ -195,12 +235,13 @@
     line-height: 30px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 486px;
   }
 }
 
 .form-program__comment {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -210,10 +251,62 @@
   margin: 0;
   margin-bottom: 38px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 158px;
+    height: 0;
+    border: 2px solid #68B738;
+    right: -20px;
+    top: 14px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 478px;
+      height: 0;
+      border: 2px solid #68B738;
+      right: -30px;
+      top: 14px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 0;
+      border: 2px solid #68B738;
+      left: -70px;
+      top: 14px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1108px;
+      height: 0;
+      border: 2px solid #68B738;
+      right: -110px;
+      top: 14px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 0;
+      border: 2px solid #68B738;
+      left: -110px;
+      top: 14px;
+    }
   }
 }
 
