@@ -15,6 +15,10 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/catalog-promo-tablet.png");
+    padding-top: 139px;
+    padding-bottom: 61px;
+    margin-top: 71px;
+    margin-bottom: 74px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/catalog-photo-tablet@2x.png");
@@ -47,8 +51,16 @@
   margin: 0;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    width: 168px;
+    margin-left: 366px;
+    margin-top: -66px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 161px;
+    margin-left: 0;
   }
 }
 
@@ -60,4 +72,17 @@
   height: 80px;
   top: -129px;
   left: 44px;
+
+  @media (min-width: @tablet-width) {
+    top: -15px;
+    left: -344px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0px;
+    margin-top: 76px;
+    margin-bottom: 63px;
+  }
 }

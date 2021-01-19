@@ -50,8 +50,16 @@
   }
 }
 
+.footer__invite-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+  }
+}
+
 .footer__invite {
-  width: 140px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -60,7 +68,33 @@
   text-transform: uppercase;
   color: @special-black;
   margin: 0;
-  margin-right: 18px;
+  margin-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 23px;
+    padding-right: 0;
+    margin-right: 87px;
+    margin-top: 9px;
+  }
+}
+
+.footer__invite-2 {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special-black;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

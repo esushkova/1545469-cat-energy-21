@@ -21,7 +21,7 @@
         </a>
       </div>
 
-      <nav class="header__nav header__nav--open header__nav--nojs">
+      <nav class="header__nav header__nav--closed header__nav--nojs">
         <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -55,15 +55,15 @@
           <ul class="form-program__info-list info">
             <li class="info__item">
               <label class="info__text" for="name">ИМЯ:*</label>
-              <input class="info__input" type="text" id="name" name="cat-name" value="Барсик" required>
+              <input class="info__input" type="text" id="name" name="cat-name" placeholder="Барсик" required>
             </li>
             <li class="info__item">
               <label class="info__text" for="weight">Вес (кг):*</label>
-              <input class="info__input" type="text" id="weight" name="cat-weight" value="7" required>
+              <input class="info__input" type="text" id="weight" name="cat-weight" placeholder="7" required>
             </li>
             <li class="info__item">
               <label class="info__text" for="age">Возраст&nbsp;(лет):</label>
-              <input class="info__input" type="text" id="age" name="cat-age" value="7" required>
+              <input class="info__input" type="text" id="age" name="cat-age" placeholder="7" required>
             </li>
           </ul>
 
@@ -88,18 +88,18 @@
             <li class="form-program__contacts-item">
               <label class="form-program__contacts-text" for="contact-email">E-mail:*</label>
               <input class="form-program__contacts-mail" type="email" id="contact-email" name="email" required
-                value="kuklachev@gmail.com">
+                placeholder="kuklachev@gmail.com">
             </li>
             <li class="form-program__contacts-item">
               <label class="form-program__contacts-text" for="contact-tel">Телефон:*</label>
               <input class="form-program__contacts-tel" type="tel" id="contact-tel" name="tel" required
-                value="8(960)900-60-90">
+                placeholder="8(960)900-60-90">
             </li>
           </ul>
 
           <h2 class="form-program__comment">Комментарий</h2>
-          <textarea class="form-program__comment-area" name="comments" rows="10"
-            cols="40">Расскажите обо всех повадках кота</textarea>
+          <textarea class="form-program__comment-area" name="comments" rows="7"
+            cols="40" placeholder="Расскажите обо всех повадках кота"></textarea>
 
           <div class="form-program__checkbox checkbox">
             <h2 class="checkbox__title">Дополнительно</h2>
@@ -140,7 +140,10 @@
     <div class="footer__contacts-wrapper footer__contacts-wrapper--form">
       <div class="container">
         <section class="footer__contacts footer__contacts--form">
-          <p class="footer__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <div class="footer__invite-wrapper">
+          <span class="footer__invite">приглашаем</span>
+          <span class="footer__invite-2">к&nbsp;сотрудничеству дилеров!</span>
+        </div>
           <div class="footer__address-wrapper">
             <p class="footer__address">ул. Большая Конюшенная, д. 19/8</p>
             <span class="footer__city">Санкт-Петербург</span>

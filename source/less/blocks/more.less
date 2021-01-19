@@ -3,7 +3,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding-top: 90px;
+    margin-top: 160px;
   }
 }
 
@@ -21,9 +21,11 @@
   margin-top: 2px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
     font-size: 20px;
     line-height: 22px;
+    width: 178px;
+    margin-left: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -36,9 +38,15 @@
   position: absolute;
   top: -41px;
   width: 30px;
-  left: 126px;
+  left: 125px;
   border: 1px solid @plus-grey;
   transform: rotate(90deg);
+
+  @media (min-width: @tablet-width) {
+    top: -81px;
+    width: 60px;
+    left: 58px;
+  }
 }
 
 .more__title::before {
@@ -46,9 +54,15 @@
   position: absolute;
   top: -41px;
   width: 30px;
-  left: 126px;
+  left: 125px;
   border: 1px solid @plus-grey;
   transform: rotate(180deg);
+
+  @media (min-width: @tablet-width) {
+    top: -80px;
+    width: 60px;
+    left: 58px;
+  }
 }
 
 .more__text {
@@ -62,11 +76,11 @@
   margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
-    width: 167px;
-    margin-bottom: 87px;
+    width: 227px;
+    margin-bottom: 86px;
     font-size: 16px;
     line-height: 18px;
-  }
+    margin-left: 7px;  }
 }
 
 .more__button {
@@ -92,6 +106,12 @@
   &:active {
     background-color: @special-grey-3;
     color: rgba(68, 68, 68, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 69px;
+    margin-left: -4px;
   }
 
   @media (min-width: @desktop-width) {
