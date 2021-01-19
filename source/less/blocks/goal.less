@@ -19,8 +19,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    flex-grow: 1;
     height: 196px;
+    width: 568px;
   }
 }
 
@@ -51,6 +51,7 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 64px;
   }
 }
 
@@ -69,6 +70,18 @@
     height: 30px;
     top: -23px;
   }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/radiobutton-tablet.svg");
+      width: 40px;
+      height: 40px;
+      top: -30px;
+      left: 7px;
+     }
+  }
 }
 
 .goal__radio:hover {
@@ -79,6 +92,18 @@
     width: 30px;
     height: 30px;
     top: -23px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/radiobutton-hover-tablet.svg");
+      width: 40px;
+      height: 40px;
+      top: -30px;
+      left: 7px;
+    }
   }
 }
 
@@ -92,8 +117,24 @@
     top: -14.5px;
     left: 7.5px;
   }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/radiobutton-active-tablet.svg");
+      width: 17.98px;
+      height: 18px;
+      top: -19.5px;
+      left: 18.5px;
+    }
+  }
 }
 
 .goal__radio:disabled + .goal__text {
   opacity: 0.3;
+}
+
+.goal__radio:focus:before {
+  outline: 1px solid black;
 }

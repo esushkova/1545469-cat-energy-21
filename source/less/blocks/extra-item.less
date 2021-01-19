@@ -23,6 +23,8 @@
     padding-bottom: 0px;
     padding-left: 0;
     padding-right: 0;
+    align-items: baseline;
+    padding-top: 15px;
   }
 }
 
@@ -62,21 +64,26 @@
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    width: 229px;
     font-size: 16px;
     line-height: 20px;
+    justify-content: none;
+    padding-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 285px;
-  }
+    width: 100%;
+    margin-left: 25px;
+    justify-content: none;
+   }
 }
 
 .extra-item__value {
   margin: 0;
+}
 
-  @media (min-width: @desktop-width) {
-    margin-right: 38px;
+.extra-item__param {
+  @media (min-width: @tablet-width) {
+    margin-right: 51px;
   }
 }
 
@@ -109,5 +116,12 @@
     width: 100%;
     padding-top: 10px;
     padding-bottom: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    margin-left: auto;
   }
 }

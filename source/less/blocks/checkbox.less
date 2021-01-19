@@ -22,6 +22,7 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 63px;
 
     &::before {
       content: "";
@@ -29,8 +30,8 @@
       width: 446px;
       height: 0;
       border: 2px solid @basic-green;
-      right: -30px;
-      top: 14px;
+      right: -67px;
+      top: 21px;
     }
 
     &::after {
@@ -40,12 +41,12 @@
       height: 0;
       border: 2px solid @basic-green;
       left: -70px;
-      top: 14px;
+      top: 21px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 62px;
+    margin-bottom: 65px;
 
     &::before {
       content: "";
@@ -53,8 +54,8 @@
       width: 1078px;
       height: 0;
       border: 2px solid @basic-green;
-      right: -110px;
-      top: 14px;
+      right: -67px;
+      top: 25px;
     }
 
     &::after {
@@ -64,7 +65,7 @@
       height: 0;
       border: 2px solid @basic-green;
       left: -110px;
-      top: 14px;
+      top: 25px;
     }
   }
 }
@@ -76,12 +77,14 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 42px;
+    grid-column-gap: 58px;
     margin-bottom: 59px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 66px;
+    grid-column-gap: 37px;
   }
 }
 
@@ -108,6 +111,10 @@
 
 .checkbox__text {
   margin-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 59px;
+  }
 }
 
 .checkbox__input {
@@ -126,6 +133,11 @@
   border: 1px solid @special-grey;
   box-sizing: border-box;
   margin-top: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .checkbox__input:hover + .checkbox__box {
@@ -140,4 +152,8 @@
   border: none;
   background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='29' height='29' stroke='%23CDCDCD'/%3E%3Cpath d='M13 19.718L7.3 13.2695L6.25 14.4574L13 22.0938L24.25 9.36648L23.2 8.09375L13 19.718Z' fill='%2368B738'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='39' height='39' stroke='%23CDCDCD'/%3E%3Cpath d='M18 24.718L12.3 18.2695L11.25 19.4574L18 27.0938L29.25 14.3665L28.2 13.0938L18 24.718Z' fill='%2368B738'/%3E%3C/svg%3E");
+  }
 }

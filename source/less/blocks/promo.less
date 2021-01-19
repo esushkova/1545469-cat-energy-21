@@ -2,6 +2,7 @@
   text-align: center;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, @basic-white 37%), url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   color: @basic-white;
   display: flex;
   flex-direction: column;
@@ -14,8 +15,12 @@
 
   @media (min-width: @tablet-width) {
     background: @basic-white;
-    padding-top: 44px;
+    padding-top: 33px;
     margin-left: -19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 31px;
   }
 }
 
