@@ -238,7 +238,12 @@
 }
 
 .header__nav--nojs .header__list {
-  display: initial;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .header__nav--nojs .header__toggle {
