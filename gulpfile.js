@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify-es");
+const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -44,10 +44,14 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/script.js")
-  .pipe(rename("script.min.js"))
-  .pipe(gulp.dest("build/js"))
-  .pipe(sync.stream());
+  return gulp.src('source/js/script.js')
+    .pipe(gulp.dest('build/js'))
+    .pipe(terser())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('build/js'))
+    .pipe(sync.stream());
 }
 
 exports.scripts = scripts;
