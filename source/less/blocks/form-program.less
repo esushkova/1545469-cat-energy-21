@@ -239,11 +239,6 @@
     background-image: url("../img/icons/icon-email-focus.svg");
   }
 
-  &:invalid {
-    outline: 2px solid @error-red;
-    background-image: url("../img/icons/icon-email-error.svg");
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -267,6 +262,11 @@
     outline: 2px solid @special-dark-grey;
     background-image: url("../img/icons/icon-email-focus.svg");
   }
+}
+
+.form-program__contacts-mail:not(:placeholder-shown):invalid {
+  outline: 2px solid #ff8282;
+  background-image: url(../img/icons/icon-email-error.svg);
 }
 
 .form-program__comment {
