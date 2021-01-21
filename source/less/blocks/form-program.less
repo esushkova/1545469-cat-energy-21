@@ -1,41 +1,6 @@
-.form-program__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
-  color: @basic-black;
-  margin: 0;
-  margin-top: 27px;
-  margin-bottom: 37px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 56px;
-    margin-top: 33px;
-  }
-
+.form-program__wrapper {
   @media (min-width: @desktop-width) {
-    margin-top: 48px;
-  }
-}
-
-.form-program__description {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: @basic-black;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 39px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 64px;
+    display: flex;
   }
 }
 
@@ -192,11 +157,6 @@
     background-image: url("../img/icons/icon-phone-focus.svg");
   }
 
-  &:invalid {
-    outline: 2px solid @error-red;
-    background-image: url("../img/icons/icon-phone-error.svg");
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -211,6 +171,11 @@
   @media (min-width: @desktop-width) {
     width: 472px;
   }
+}
+
+.form-program__contacts-tel:not(:placeholder-shown):invalid {
+  outline: 2px solid #ff8282;
+  background-image: url("../img/icons/icon-phone-error.svg");
 }
 
 .form-program__contacts-mail {
@@ -266,7 +231,7 @@
 
 .form-program__contacts-mail:not(:placeholder-shown):invalid {
   outline: 2px solid #ff8282;
-  background-image: url(../img/icons/icon-email-error.svg);
+  background-image: url("../img/icons/icon-email-error.svg");
 }
 
 .form-program__comment {

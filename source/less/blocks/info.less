@@ -95,8 +95,6 @@
   }
 }
 
-.info__wrapper {
-  @media (min-width: @desktop-width) {
-    display: flex;
-  }
+.info__input:not(:placeholder-shown):invalid {
+  outline: 2px solid #ff8282;
 }
