@@ -49,8 +49,8 @@
       <p class="form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     </div>
 
-    <div class="container container--form">
       <form class="form-program" action="https://echo.htmlacademy.ru" method="post">
+        <div class="container container--form">
         <div class="form-program__wrapper">
           <ul class="form-program__info-list info">
             <li class="info__item">
@@ -67,24 +67,35 @@
             </li>
           </ul>
 
-          <ul class="form-program__goal-list goal">
+          <ul class="form-program__goal goal">
             <li class="goal__item">
-              <input class="goal__radio" type="radio" name="goal" id="slim" value="slim" checked="checked">
-              <label class="goal__text" for="slim">Похудение</label>
+              <label class="goal__radio">
+                <input class="goal__input" type="radio" name="goal" value="slim" checked>
+                <span class="goal__button"> </span>
+                <span class="goal__text">Похудение</span>
+              </label>
             </li>
             <li class="goal__item">
-              <input class="goal__radio" type="radio" name="goal" id="strong" value="weight">
-              <label class="goal__text" for="strong">Набор массы</label>
+              <label class="goal__radio">
+              <input class="goal__input" type="radio" name="goal" value="weight" disabled>
+              <span class="goal__button"> </span>
+              <span class="goal__text">Набор массы</span>
+             </label>
             </li>
             <li class="goal__item">
-              <input class="goal__radio" type="radio" name="goal" id="advice" value="advice">
-              <label class="goal__text" for="advice">Не знаю (Нужен ваш совет)</label>
+              <label class="goal__radio">
+              <input class="goal__input" type="radio" name="goal" value="advice">
+              <span class="goal__button"> </span>
+              <span class="goal__text">Не знаю (Нужен ваш совет)</span>
+                   </label>
             </li>
           </ul>
         </div>
+        </div>
 
         <h2 class="form-program__contacts-title">Контактные данные (владельца кота)</h2>
-        <ul class="form-program__contacts-list">
+        <div class="container container--form">
+          <ul class="form-program__contacts-list">
           <li class="form-program__contacts-item">
             <label class="form-program__contacts-text" for="contact-email">E-mail:*</label>
             <input class="form-program__contacts-mail" type="email" id="contact-email" name="email" required
@@ -96,13 +107,17 @@
               placeholder="8(960)900-60-90">
           </li>
         </ul>
+        </div>
 
         <h2 class="form-program__comment">Комментарий</h2>
+        <div class="container container--form">
         <textarea class="form-program__comment-area" name="comments" rows="7" cols="40"
           placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
 
+        <h2 class="checkbox__title">Дополнительно</h2>
+        <div class="container container--form">
         <div class="form-program__checkbox checkbox">
-          <h2 class="checkbox__title">Дополнительно</h2>
           <div class="checkbox__list">
             <label class="checkbox__option">
               <input class="checkbox__input" type="checkbox" name="non-sugar" checked />
@@ -110,7 +125,7 @@
               <span class="checkbox__text">Сахарозаменитель</span>
             </label>
             <label class="checkbox__option">
-              <input class="checkbox__input" type="checkbox" name="water" />
+              <input class="checkbox__input" type="checkbox" name="water" disabled />
               <span class="checkbox__box"> </span>
               <span class="checkbox__text">Питьевая вода</span>
             </label>
@@ -132,8 +147,8 @@
             * — Обязательные поля
           </small>
         </div>
-      </form>
-    </div>
+        </div>
+        </form>
   </main>
 
   <footer class="footer">

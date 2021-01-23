@@ -2,33 +2,40 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 26px;
   position: relative;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   margin-left: -20px;
-  padding-left: 20px;
+  padding-top: 22px;
+  padding-bottom: 6px;
+  padding-left: 19px;
   margin-right: -20px;
-  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+    padding-left: 28px;
     border: 1px solid #e7e7e7;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 26px;
+    padding-left: 27px;
     height: 196px;
     width: 568px;
   }
 }
 
 .goal__item {
-  margin-bottom: 19px;
+  margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 13px;
   }
 }
 
@@ -39,6 +46,7 @@
 }
 
 .goal__text {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -46,95 +54,74 @@
   line-height: 18px;
   color: @special-dark-grey-2;
   text-transform: uppercase;
-  margin-left: 42px;
+  margin-left: 15px;
+  margin-top: 7px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 64px;
+    margin-left: 20px;
+    margin-top: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
+    margin-top: 6px;
+  }
+}
+
+.goal__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: 0;
+}
+
+.goal__button {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30.1px;
+  border: 1px solid #CDCDCD;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 39.95px;
+    height: 40px;
+  }
+}
+
+.goal__input:hover + .goal__button {
+  border: 1px solid #bababa;
+}
+
+.goal__input:disabled + .goal__button + .goal__text {
+  opacity: 0.3;
+}
+
+.goal__input:checked + .goal__button {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 13.5px;
+    height: 13.55px;
+    top: 7px;
+    left: 7px;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='7' cy='7.27438' rx='6.75' ry='6.77322' fill='%2368B738'/%3E%3C/svg%3E%0A");
+
+    @media (min-width: @tablet-width) {
+      width: 17.98px;
+      height: 18px;
+      top: 10px;
+      left: 10px;
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='9' fill='%2368B738'/%3E%3C/svg%3E%0A");
+    }
   }
 }
 
 .goal__radio {
-  position: relative;
-  width: 0;
-  height: 0;
-  clip: rect(0 0 0 0);
-  margin: 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icons/radiobutton.svg");
-    width: 30px;
-    height: 30px;
-    top: -23px;
-  }
-
-  @media (min-width: @tablet-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/icons/radiobutton-tablet.svg");
-      width: 40px;
-      height: 40px;
-      top: -30px;
-      left: 7px;
-    }
-  }
-}
-
-.goal__radio:hover {
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icons/radiobutton-hover.svg");
-    width: 30px;
-    height: 30px;
-    top: -23px;
-  }
-
-  @media (min-width: @tablet-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../img/icons/radiobutton-hover-tablet.svg");
-      width: 40px;
-      height: 40px;
-      top: -30px;
-      left: 7px;
-    }
-  }
-}
-
-.goal__radio:checked {
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icons/radiobutton-active.svg");
-    width: 13.5px;
-    height: 13.55px;
-    top: -14.5px;
-    left: 7.5px;
-  }
-
-  @media (min-width: @tablet-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/icons/radiobutton-active-tablet.svg");
-      width: 17.98px;
-      height: 18px;
-      top: -19.5px;
-      left: 18.5px;
-    }
-  }
-}
-
-.goal__radio:disabled + .goal__text {
-  opacity: 0.3;
-}
-
-.goal__radio:focus::before {
-  outline: 1px solid black;
+  display: flex;
 }

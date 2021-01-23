@@ -9,6 +9,8 @@
   margin: 0;
   margin-bottom: 35px;
   margin-top: 25px;
+  padding-left: 18px;
+  padding-right: 20px;
 
   &::after {
     content: "";
@@ -18,15 +20,16 @@
     border: 2px solid @basic-green;
     transform: rotate(-0.17deg);
     top: 14px;
-    right: -20px;
+    right: 0;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 37px;
-    margin-top: 2px;
+    margin-top: -7px;
     margin-bottom: 80px;
+    padding-left: 67px;
+    padding-right: 30px;
 
     &::before {
       content: "";
@@ -35,7 +38,7 @@
       height: 0;
       border: 2px solid @basic-green;
       top: 20px;
-      left: -67px;
+      left: 0;
     }
 
     &::after {
@@ -46,7 +49,7 @@
       border: 2px solid @basic-green;
       transform: rotate(-0.17deg);
       top: 20px;
-      right: -30px;
+      right: 0;
     }
   }
 
@@ -54,8 +57,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: -5px;
     margin-bottom: 65px;
+    padding-left: 110px;
+    padding-right: 110px;
 
     &::before {
       content: "";
@@ -64,7 +69,7 @@
       height: 0;
       border: 2px solid @basic-green;
       top: 22px;
-      left: -110px;
+      left: 0;
     }
 
     &::after {
@@ -75,7 +80,7 @@
       border: 2px solid @basic-green;
       transform: rotate(-0.17deg);
       top: 22px;
-      right: -110px;
+      right: 0;
     }
   }
 }

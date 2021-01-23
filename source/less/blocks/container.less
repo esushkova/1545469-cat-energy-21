@@ -17,14 +17,40 @@
 
 
 .container--form {
-  padding-left: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
     padding-left: 70px;
     padding-right: 67px;
   }
 
   @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+    max-width: @desktop-width;
     padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.container--catalog {
+  padding-left: 18px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+    max-width: @desktop-width;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

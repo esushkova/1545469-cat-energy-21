@@ -8,6 +8,8 @@
   color: @basic-black;
   margin: 0;
   margin-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &::before {
     content: "";
@@ -15,7 +17,7 @@
     width: 136px;
     height: 0;
     border: 2px solid @basic-green;
-    right: -20px;
+    right: 0;
     top: 14px;
   }
 
@@ -23,6 +25,9 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 63px;
+    padding-left: 69px;
+    padding-right: 30px;
+
 
     &::before {
       content: "";
@@ -30,7 +35,7 @@
       width: 446px;
       height: 0;
       border: 2px solid @basic-green;
-      right: -67px;
+      right: 0px;
       top: 21px;
     }
 
@@ -40,13 +45,15 @@
       width: 30px;
       height: 0;
       border: 2px solid @basic-green;
-      left: -70px;
+      left: 0;
       top: 21px;
     }
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 65px;
+    padding-left: 110px;
+    padding-right: 110px;
 
     &::before {
       content: "";
@@ -54,7 +61,7 @@
       width: 1078px;
       height: 0;
       border: 2px solid @basic-green;
-      right: -67px;
+      right: 0;
       top: 25px;
     }
 
@@ -64,7 +71,7 @@
       width: 70px;
       height: 0;
       border: 2px solid @basic-green;
-      left: -110px;
+      left: 0;
       top: 25px;
     }
   }
@@ -84,7 +91,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 66px;
-    grid-column-gap: 37px;
+    grid-column-gap: 80px;
   }
 }
 
