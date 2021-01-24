@@ -4,7 +4,7 @@
   &::before {
     content: "";
     position: absolute;
-    width: 136px;
+    width: 100%;
     height: 0;
     border: 2px solid @basic-green;
     right: 0;
@@ -16,20 +16,10 @@
     &::before {
       content: "";
       position: absolute;
-      width: 446px;
+      width: 100%;
       height: 0;
       border: 2px solid @basic-green;
       right: 0px;
-      top: 21px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 0;
-      border: 2px solid @basic-green;
-      left: 0;
       top: 21px;
     }
   }
@@ -39,24 +29,13 @@
     &::before {
       content: "";
       position: absolute;
-      width: 1078px;
+      width: 100%;
       height: 0;
       border: 2px solid @basic-green;
       right: 0;
       top: 25px;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 70px;
-      height: 0;
-      border: 2px solid @basic-green;
-      left: 0;
-      top: 25px;
-    }
   }
-
 }
 
 .checkbox__title {
@@ -67,16 +46,38 @@
   line-height: 26px;
   color: @basic-black;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
+  display: inline-block;
+  position: relative;
+  z-index: 9;
+  padding-right: 21px;
+  margin-left: -40px;
+  padding-left: 40px;
+  background-color: white;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 63px;
+    margin-bottom: 65px;
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    padding-right: 40px;
+    margin-left: -40px;
+    padding-left: 40px;
+    background-color: white;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 65px;
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    padding-right: 40px;
+    margin-left: -40px;
+    padding-left: 40px;
+    background-color: white;
   }
 }
 

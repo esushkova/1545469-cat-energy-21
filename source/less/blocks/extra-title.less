@@ -4,15 +4,14 @@
   margin-bottom: 35px;
   margin-top: 25px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    width: 53px;
+    width: 100%;
     height: 0;
     border: 2px solid @basic-green;
-    transform: rotate(-0.17deg);
     top: 14px;
-    right: 0;
+    left: 0;
   }
 
   @media (min-width: @tablet-width) {
@@ -20,21 +19,10 @@
     margin-top: -7px;
     margin-bottom: 80px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 328px;
-      height: 0;
-      border: 2px solid @basic-green;
-      transform: rotate(-0.17deg);
-      top: 20px;
-      right: 0;
-    }
-
     &::before {
       content: "";
       position: absolute;
-      width: 30px;
+      width: 100%;
       height: 0;
       border: 2px solid @basic-green;
       top: 20px;
@@ -56,10 +44,6 @@
       top: 22px;
       left: 0;
     }
-
-    &::after {
-      display: none;
-    }
   }
 }
 
@@ -70,24 +54,37 @@
   font-size: 24px;
   line-height: 24px;
   color: @basic-black;
+  display: inline-block;
+  position: relative;
+  z-index: 9;
+  padding-right: 24px;
+  margin-left: -40px;
+  padding-left: 40px;
+  background-color: white;
+  margin-bottom: 0;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: auto;
-    margin-top: 0px;
-    font-size: 36px;
-    line-height: 36px;
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    padding-right: 35px;
+    margin-left: 0px;
     padding-left: 37px;
+    background-color: white;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: inline-block;
     position: relative;
     z-index: 9;
-    padding-right: 45px;
-    margin-left: -49px;
-    padding-left: 45px;
+    padding-right: 35px;
+    margin-left: -40px;
+    padding-left: 40px;
     background-color: white;
+    margin-bottom: 0;
   }
 }
