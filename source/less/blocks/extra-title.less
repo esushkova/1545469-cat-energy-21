@@ -50,7 +50,7 @@
     &::before {
       content: "";
       position: absolute;
-      width: 70px;
+      width: 100%;
       height: 0;
       border: 2px solid @basic-green;
       top: 22px;
@@ -58,14 +58,7 @@
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      width: 957px;
-      height: 0;
-      border: 2px solid @basic-green;
-      transform: rotate(-0.17deg);
-      top: 22px;
-      right: 0;
+      display: none;
     }
   }
 }
@@ -89,6 +82,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 0;
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    padding-right: 45px;
+    margin-left: -49px;
+    padding-left: 45px;
+    background-color: white;
   }
 }
